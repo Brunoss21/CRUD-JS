@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD API JS - API Two</title>
+    <script src="script.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        
+        #content {
+            width: 80%;
+            max-width: 1200px;
+            margin: 20px 0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        thead {
+            background-color: #4CAF50;
+            color: #fff;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            font-weight: bold;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        td {
+            vertical-align: top;
+        }
+
+        td:nth-child(1) {
+            font-weight: bold;
+            color: #4CAF50;
+        }
+
+        td:nth-child(4) {
+            max-width: 300px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        @media (max-width: 768px) {
+            table, th, td {
+                font-size: 14px;
+            }
+
+            td:nth-child(4) {
+                max-width: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>CRUD de API</h1>
+    <h2>Método GET API: jobicy.com </h2>
+    <h3>Busca de empregos remotos </h3>
+        <div id="contentJobs"></div> 
+        <script>montarPagina()</script>
+</body>
+</html>
